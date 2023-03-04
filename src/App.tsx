@@ -1,24 +1,18 @@
-import React from 'react';
+import React, {useState} from 'react';
 import logo from './logo.svg';
 import './App.css';
 
 function App() {
+  let plusNum = () => {setNum(++num)}
+  let clearValue = () => {setNum(0)}
+  let minusNum = () => {setNum(--num)}
+  let[num, setNum] = useState(0)
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+     <h1>{num}</h1>
+     <button onClick={plusNum}>PLUS</button>
+     <button onClick={clearValue}>CLEAR</button>
+     <button onClick={minusNum}>MINUS</button>
     </div>
   );
 }
