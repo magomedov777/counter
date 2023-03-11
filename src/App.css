@@ -9,15 +9,30 @@
 .App button{
   margin: 5px;
   padding: 10px;
-  border-radius: 15px;
-  border-bottom: 3px solid black;
+  border-radius: 17px;
+  border-bottom: 5px solid black;
   cursor: pointer;
-  font-style: oblique;
-  font-weight: bold;
+  font-style: normal;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: bolder;
+  
 }
 
 .App button:hover{
-  transition: 0.5s;
-  border-bottom: 3px solid gold;
-  animation-duration: 0.5s;
+  transition: 0.2s;
+  animation-duration: 0.2s;
+  border-bottom: 6px solid black;
  }
+
+ .App .plus:hover{
+  background-color: green;
+ }
+ 
+ .App .minus:hover{
+  background-color: red;
+ }
+
+ .App .clear:hover{
+  background-color: yellow;
+ }
+
