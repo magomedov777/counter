@@ -1,13 +1,14 @@
-import React, { useState } from "react";
+import React, { FC, useState } from "react";
 import "./App.css";
 import Counter from "./Counter";
 
-function App() {
+const App: React.FC = () => {
   return (
     <div className="App">
       <Counter/>
     </div>
   );
 }
+
 
 export default App;
