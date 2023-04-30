@@ -1,0 +1,94 @@
+.mainPannel {
+    width: 385px;
+    height: 220px;
+    border: 5px solid slateblue;
+    border-radius: 40px;
+    display: inline-block;
+    margin-top: 100px;
+}
+
+.counterScreen {
+    width: 340px;
+    height: 120px;
+    margin-left: 15px;
+    margin-top: 15px;
+    border-radius: 20px;
+    border: 5px solid slateblue;
+    font-size: 90px;
+    font-weight: bold;
+    color: gold;
+}
+
+/* .counterValue {
+    font-size: 90px;
+    font-weight: bold;
+    color: gold;
+    text-shadow: 3px 3px rgb(30, 30, 168);
+} */
+
+.inc {
+    width: 90px;
+    height: 40px;
+    background-color: white;
+    border: 5px solid slateblue;
+    border-radius: 10px;
+    margin-top: 15px;
+    font-size: 15px;
+    cursor: pointer;
+    background: none;
+    color: slateblue;
+    font-size: 17px;
+}
+
+.reset {
+    width: 90px;
+    height: 40px;
+    background-color: white;
+    margin-left: 30px;
+    border: 5px solid slateblue;
+    border-radius: 10px;
+    margin-top: 15px;
+    font-size: 15px;
+    cursor: pointer;
+    background: none;
+    color: slateblue;
+    font-size: 17px;
+}
+.dec{
+    width: 90px;
+    height: 40px;
+    background-color: white;
+    margin-left: 30px;
+    border: 5px solid slateblue;
+    border-radius: 10px;
+    margin-top: 15px;
+    font-size: 15px;
+    cursor: pointer;
+    background: none;
+    color: slateblue;
+    font-size: 17px;
+}
+
+.inc:hover {
+    border: 5px solid gold;
+    color: gold;
+    transition: 0.4s;
+}
+
+.reset:hover {
+    border: 5px solid gold;
+    transition: 0.4s;
+    color: gold;
+}
+
+.dec:hover{
+    border: 5px solid gold;
+    transition: 0.4s;
+    color: gold;
+}
+
+.red{
+    font-size: 90px;
+    font-weight: bold;
+    color: red;
+}

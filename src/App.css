@@ -1,12 +1,16 @@
+body{
+  background: url(https://wallpaperaccess.com/full/84303.jpg);
+}
 .App {
   text-align: center;
+  
 }
 
 .App h1{
   font-size: 100px;
 }
 
-.App button{
+/* .App button{
   margin: 5px;
   padding: 10px;
   border-radius: 17px;
@@ -35,4 +39,4 @@
  .App .clear:hover{
   background-color: yellow;
  }
-
+ */
