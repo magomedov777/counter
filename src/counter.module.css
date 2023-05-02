@@ -19,13 +19,6 @@
     color: gold;
 }
 
-/* .counterValue {
-    font-size: 90px;
-    font-weight: bold;
-    color: gold;
-    text-shadow: 3px 3px rgb(30, 30, 168);
-} */
-
 .inc {
     width: 90px;
     height: 40px;
@@ -54,7 +47,8 @@
     color: slateblue;
     font-size: 17px;
 }
-.dec{
+
+.dec {
     width: 90px;
     height: 40px;
     background-color: white;
@@ -81,13 +75,13 @@
     color: gold;
 }
 
-.dec:hover{
+.dec:hover {
     border: 5px solid gold;
     transition: 0.4s;
     color: gold;
 }
 
-.red{
+.red {
     font-size: 90px;
     font-weight: bold;
     color: red;
