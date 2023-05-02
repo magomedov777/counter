@@ -6,8 +6,7 @@ type ButtonType = {
     resetHandler: () => void
     decrementHandler: () => void
     count: number
-    maxValue: number
-    minValue: number
+    
 }
 
 export const Buttons = (props: ButtonType) : JSX.Element => {
