@@ -4,6 +4,7 @@ import { Buttons } from "./Buttons";
 import { Screen } from "./Screen";
 
 export const Counter: React.FC = ()  => {
+  let [count, setCount] = useState(0);
 
   const incrementHandler = () => setCount(++count)
 
