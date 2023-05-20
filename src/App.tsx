@@ -17,7 +17,9 @@ const App: React.FC = () => {
     localStorage.setItem('countValue', JSON.stringify(count))
   }, [count])
 
- 
+  const incrementHandler = () => {
+    setCount(++count)
+  } 
 
   const resetHandler = () => setCount(0)
 
