@@ -27,7 +27,6 @@ const App: React.FC = () => {
 
   const maxValue = 5;
 
-  const minValue = 0;
   
   return (
     <div className="App">
