@@ -9,6 +9,7 @@ const App: React.FC = () => {
     let valueAsString = localStorage.getItem('countValue')
     if (valueAsString) {
       let newCount = JSON.parse(valueAsString)
+      setCount(newCount)
     }
   }, [])
 
