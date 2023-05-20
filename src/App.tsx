@@ -3,7 +3,6 @@ import "./App.css";
 import Counter from "./Counter";
 
 const App: React.FC = () => {
-  let [count, setCount] = useState<number>(0);
 
   useEffect(() => {
     let valueAsString = localStorage.getItem('countValue')
