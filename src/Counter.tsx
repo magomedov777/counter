@@ -1,35 +1,32 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import s from './counter.module.css';
 import { Buttons } from "./Buttons";
 import { Screen } from "./Screen";
 
-export const Counter: React.FC = ()  => {
-  let [count, setCount] = useState(0);
+type PropsType = {
+  incrementHandler: () => void
+  resetHandler: () => void
+  decrementHandler: () => void
+  maxValue: number
+  minValue: number
+  count: number
+}
 
-  const incrementHandler = () => setCount(++count)
-
-  const resetHandler = () => setCount(0)
-  
-  const decrementHandler = () => setCount(--count)
-  
-  const maxValue = 5;
-  
-  const minValue = 0;
-
+export const Counter: React.FC<PropsType> = (props) => {
   return (
     <div className={s.appBody}>
       <div className={s.mainPannel}>
         <Screen
-          count={count}
-          maxValue={maxValue}
+          count={props.count}
+          maxValue={props.maxValue}
         />
         <Buttons
-          incrementHandler={incrementHandler}
-          resetHandler={resetHandler}
-          decrementHandler={decrementHandler}
-          count={count}
-          maxValue={maxValue}
-          minValue={minValue}
+          incrementHandler={props.incrementHandler}
+          resetHandler={props.resetHandler}
+          decrementHandler={props.decrementHandler}
+          count={props.count}
+          maxValue={props.maxValue}
+          minValue={props.minValue}
         />
 
       </div>
