@@ -28,7 +28,6 @@ const App = () => {
 
   const maxValue = 5;
 
-  const minValue = 0;
 
   // const setToLocalStorageHandler = () => {
   //   localStorage.setItem('keyValue', JSON.stringify(count))
