@@ -9,7 +9,7 @@ type PropsType = {
   decrementHandler: () => void
   maxValue: number
   minValue: number
-  count: number
+  value: number
 }
 
 export const Counter: React.FC<PropsType> = (props) => {
@@ -17,14 +17,14 @@ export const Counter: React.FC<PropsType> = (props) => {
     <div className={s.appBody}>
       <div className={s.mainPannel}>
         <Screen
-          count={props.count}
+          count={props.value}
           maxValue={props.maxValue}
         />
         <Buttons
           incrementHandler={props.incrementHandler}
           resetHandler={props.resetHandler}
           decrementHandler={props.decrementHandler}
-          count={props.count}
+          value={props.value}
           maxValue={props.maxValue}
           minValue={props.minValue}
         />

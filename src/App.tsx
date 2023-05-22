@@ -1,34 +1,45 @@
-import React, { FC, useEffect, useState } from "react";
+import React, {useEffect, useState } from "react";
 import "./App.css";
 import Counter from "./Counter";
 
-const App: React.FC = () => {
-  let [count, setCount] = useState<number>(0);
+const App = () => {
 
   useEffect(() => {
-    let valueAsString = localStorage.getItem('countValue')
+    let valueAsString = localStorage.getItem("counterValue")
     if (valueAsString) {
-      let newCount = JSON.parse(valueAsString)
-      setCount(newCount)
+      let newValue = JSON.parse(valueAsString)
+      setValue(newValue)
     }
   }, [])
 
   useEffect(() => {
-    localStorage.setItem('countValue', JSON.stringify(count))
-  }, [count])
+    localStorage.setItem("counterValue", JSON.stringify(value))
+  }, [value])
 
-  const incrementHandler = () => {
-    setCount(++count)
-  } 
+   const incrementHandler = () => {
+    setValue(++value)
+    // setToLocalStorageHandler()
+  }
 
-  const resetHandler = () => setCount(0)
+  const resetHandler = () => setValue(0)
 
-  const decrementHandler = () => setCount(--count)
+  const decrementHandler = () => setValue(--value)
 
   const maxValue = 5;
 
   const minValue = 0;
-  
+
+  // const setToLocalStorageHandler = () => {
+  //   localStorage.setItem('keyValue', JSON.stringify(count))
+  // }
+  // const getFromStorageHandler = () => {
+  //   let countAsString = localStorage.getItem('keyValue')
+  //   if (countAsString) {
+  //     let newCount = JSON.parse(countAsString)
+  //     setCount(newCount)
+  //   }
+  // }
+
   return (
     <div className="App">
       <Counter
@@ -37,7 +48,7 @@ const App: React.FC = () => {
         decrementHandler={decrementHandler}
         maxValue={maxValue}
         minValue={minValue}
-        count={count}
+        value={value}
       />
     </div>
   );
