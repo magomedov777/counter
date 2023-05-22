@@ -26,6 +26,7 @@ const App = () => {
 
   const decrementHandler = () => setValue(--value)
 
+  const maxValue = 5;
 
   const minValue = 0;
 
