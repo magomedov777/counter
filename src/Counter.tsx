@@ -9,7 +9,6 @@ type PropsType = {
   decrementHandler: () => void
   maxValue: number
   minValue: number
-  value: number
 }
 
 export const Counter: React.FC<PropsType> = (props) => {
