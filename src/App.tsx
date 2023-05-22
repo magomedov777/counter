@@ -3,6 +3,7 @@ import "./App.css";
 import Counter from "./Counter";
 
 const App = () => {
+  let [value, setValue] = useState<number>(0);
 
   useEffect(() => {
     let valueAsString = localStorage.getItem("counterValue")
